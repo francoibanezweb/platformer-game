@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://ba7idhocnhy7u"]
+[gd_scene load_steps=3 format=3 uid="uid://ba7idhocnhy7u"]
 
 [ext_resource type="Script" path="res://main.gd" id="1_2erwx"]
+[ext_resource type="PackedScene" uid="uid://bkounan1ryni0" path="res://parallax_background.tscn" id="2_r8yxs"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_2erwx")
@@ -19,6 +20,8 @@ offset_right = 701.0
 offset_bottom = 496.0
 tooltip_text = "This is a really cool quit button"
 text = "Quit"
+
+[node name="BG" parent="." instance=ExtResource("2_r8yxs")]
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
