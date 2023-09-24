@@ -15,9 +15,7 @@
 [ext_resource type="Texture2D" uid="uid://di8k2fcaunu7h" path="res://assets/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-5.png" id="13_an0c5"]
 [ext_resource type="Texture2D" uid="uid://bne2p7tj41aqf" path="res://assets/Sunny-land-files/Sunny-land-assets-files/PNG/sprites/player/run/player-run-6.png" id="14_rrhpi"]
 
-[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_xypoc"]
-radius = 6.0
-height = 18.0
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_e6x83"]
 
 [sub_resource type="AtlasTexture" id="AtlasTexture_1jl6q"]
 atlas = ExtResource("2_b8stk")
@@ -236,17 +234,18 @@ _data = {
 script = ExtResource("1_xh8f5")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(1, 7)
-shape = SubResource("CapsuleShape2D_xypoc")
+position = Vector2(0, -15)
+shape = SubResource("CapsuleShape2D_e6x83")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(-1, -16)
 sprite_frames = SubResource("SpriteFrames_sfury")
 animation = &"Idle"
 frame = 1
 flip_h = true
-metadata/_edit_lock_ = true
 
 [node name="Camera2D" type="Camera2D" parent="."]
+visible = false
 zoom = Vector2(1.6, 1.6)
 limit_left = 0
 limit_top = 0
