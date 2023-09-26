@@ -3,6 +3,8 @@
 Welcome to my first 2D game developed using the Godot Engine! In this simple yet
 exciting game, you'll embark on a thrilling adventure.
 
+[Watch the Demo Video](https://youtu.be/1y0ChYm25aE)
+
 ## Getting Started
 
 ### Prerequisites
