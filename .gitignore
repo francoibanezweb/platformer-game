@@ -15,6 +15,4 @@ data_*/
 mono_crash.*.json
 
 # Game Art
-# assets/*
-!/assets/
-/assets/*
+/assets/*/
